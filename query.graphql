@@ -1,0 +1,6 @@
+query ExampleQuery($semester_filter: semesters_bool_exp!) {
+    available_semesters: semesters(where: $semester_filter) {
+        semester_id
+        title
+    }
+}
